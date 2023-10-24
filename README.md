@@ -48,7 +48,7 @@
 
 - **The app implements three classes: Person, Student, and Teacher.**
 - **It uses class and module concepts.**
-- **Implements OOP concepts.**
+- **Implements OOP Ruby concepts.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,7 +56,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> This project could be used for implementing a School Library using OOP with the Ruby language.
+> This project could be used for implementing a School Library using OOP desktop app with the Ruby language.
 > It can also be converted into a webpage.
 
 To get a local copy up and running, follow these steps.
@@ -116,7 +116,7 @@ To run the project, execute the following command:
 
   Install Ruby LSP extension on VS Code.
 
-  Run your program with Run Code option innside of VS Code (Play symbol).
+  Run your program with Run Code option inside of VS Code (Play symbol).
   The output of your code will be shown on the terminal (output tab).
 ```
 ### Run your code on IRB (Interactive Ruby Shell)
