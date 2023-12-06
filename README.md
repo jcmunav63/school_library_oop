@@ -46,9 +46,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **The app implements three classes: Person, Student, and Teacher.**
+- **The app implements three main classes: Person, Student, and Teacher.**
 - **It uses class and module concepts.**
 - **Implements OOP Ruby concepts.**
+- **Adds a decorator class and two subclasses: capitalize & trimmer.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,6 +156,9 @@ Run rubocop on your VS Code terminal.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Set up associations between classes and objects.
+- Add Book and Rental classes.
+- Add a basic console UI for running the app (list people, books and rentals; create people, books and rentals; quit the app).
 - We can adapt this code to use on a web app for implementing a School Library using OOP with the Ruby language.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
