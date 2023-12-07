@@ -18,8 +18,11 @@ classroom1.add_student(student4)
 
 puts ''
 puts '=============================================='
+puts '      SCHOOL      LIBRARY       APP'
+puts '=============================================='
 puts ''
 puts 'DATA FROM PROJECT 3 - SET UP ASSOCIATIONS'
+puts '-----------------------------------------'
 puts ''
 puts "Classroom 1: #{classroom1.label} is a new classroom."
 puts ''
@@ -41,9 +44,9 @@ book1 = Book.new(title: 'Thinking in Systems A Primer', author: 'Donella H Meado
 book2 = Book.new(rentals: [], title: 'Clean Code Javascript', author: 'Ryan McDermott')
 person1 = Person.new(name: 'John Francis', age: 30)
 person2 = Person.new(name: 'Ann Jane', age: 21)
-rental1 = Rental.new(book1, person1, date: '20-11-2023')
-rental2 = Rental.new(book1, person2, date: '05-02-2021')
-rental3 = Rental.new(book2, person2, date: '10-03-2022')
+rental1 = Rental.new(book1, person1, date: '2023-11-20')
+rental2 = Rental.new(book1, person2, date: '2021-02-05')
+rental3 = Rental.new(book2, person2, date: '2022-03-10')
 
 puts ''
 puts "Book 1 - Title: \"#{book1.title}\" | Author: #{book1.author}"
@@ -72,6 +75,7 @@ person.correct_name
 puts '=============================================='
 puts ''
 puts 'DATA FROM PROJECT 2 - DECORATE A CLASS'
+puts '--------------------------------------'
 puts ''
 
 capitalized_person = CapitalizeDecorator.new(person)
@@ -98,6 +102,7 @@ teacher2 = Teacher.new('Literature', name: 'Ms. Harrison', age: 38, parent_permi
 puts '=============================================='
 puts ''
 puts 'DATA FROM PROJECT 1 - ADD PERSON, STUDENT & TEACHER CLASSES'
+puts '-----------------------------------------------------------'
 puts ''
 puts "Id: #{student1.id} | Student 1: #{student1.name} | Age: #{student1.age}"
 puts "Classroom: #{student1.classroom}"
@@ -117,7 +122,7 @@ puts ''
 puts "Id: #{teacher2.id} | Teacher 2: #{teacher2.name} | Age: #{teacher2.age}"
 puts "Specialization: #{teacher2.specialization}"
 puts ''
-puts '=============================================='
-puts ''
+puts '====================================================='
 puts 'Thank you very much for using the School Library App!'
+puts '====================================================='
 puts ''
