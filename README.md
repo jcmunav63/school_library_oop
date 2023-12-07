@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="50%" src="./logotye3.PNG" alt="Logo TyE"> 
+    <img width="50%" src="./logo_jcm.png" alt="Logo JCM"> 
 </p>
 
 # SCHOOL LIBRARY OOP APP
