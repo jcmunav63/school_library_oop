@@ -1,7 +1,9 @@
 require_relative 'person'
+require_relative 'book'
 require_relative 'student'
 require_relative 'teacher'
 require_relative 'classroom'
+require_relative 'rental'
 require_relative 'capitalizedecorator'
 require_relative 'trimmerdecorator'
 
@@ -22,41 +24,44 @@ puts ''
 puts "Classroom 1: #{classroom1.label} is a new classroom."
 puts ''
 puts "Id: #{student3.id} | Student 3: #{student3.name} | Age: #{student3.age}"
-puts "Classroom: #{student3.classroom}"
+puts "Classroom: #{student3.classroom.label}"
 puts "Parent permission: #{student3.parent_permission}"
 puts ''
 puts "Id: #{student4.id} | Student 4: #{student4.name} | Age: #{student4.age}"
-puts "Classroom: #{student4.classroom}"
+puts "Classroom: #{student4.classroom.label}"
 puts "Parent permission: #{student4.parent_permission}"
 puts ''
 puts 'List of students in Classroom 1 - Chemistry:'
-puts " #{classroom1.students}"
+p " #{classroom1.students}"
 puts ''
 
 # ----- BOOK, PERSON AND RENTAL -----
 
-book1 = Book.new(title: 'Thinking in Systems - A Primer', author: 'Donella H. Meadows')
-book2 = Book.new(title: 'Clean Code Javascript', author: 'Ryan McDermott')
+book1 = Book.new(title: 'Thinking in Systems A Primer', author: 'Donella H Meadows')
+book2 = Book.new(rentals: [], title: 'Clean Code Javascript', author: 'Ryan McDermott')
 person1 = Person.new(name: 'John Francis', age: 30)
 person2 = Person.new(name: 'Ann Jane', age: 21)
 rental1 = Rental.new(book1, person1, date: '20-11-2023')
 rental2 = Rental.new(book1, person2, date: '05-02-2021')
 rental3 = Rental.new(book2, person2, date: '10-03-2022')
-rental4 = Rental.new(book2, person2, date: '14-05-2022')
 
 puts ''
-puts "Book 1 - Title: #{book1.title} and Author: #{book1.author}"
+puts "Book 1 - Title: \"#{book1.title}\" | Author: #{book1.author}"
 puts ''
-puts "Book 2 - Title: #{book2.title} and Author: #{book2.author}"
+puts "Book 2 - Title: \"#{book2.title}\" | Author: #{book2.author}"
 puts ''
-puts "Person1 - Name: #{person1.name} Age: #{person1.age}"
+puts "Person1 - Name: #{person1.name} | Age: #{person1.age}"
 puts ''
-puts "Person2 - Name: #{person2.name} Age: #{person2.age}"
+puts "Person2 - Name: #{person2.name} | Age: #{person2.age}"
 puts ''
-puts "RENTAL 1"
-puts "Book: #{rental1.book}"
-puts "Person: #{rental1.person}"
-puts "Date: #{rental1.date}"
+puts 'RENTAL 1'
+puts "Book: \"#{rental1.book.title}\" | Person: #{rental1.person.name} | Date: #{rental1.date}"
+puts ''
+puts 'RENTAL 2'
+puts "Book: \"#{rental2.book.title}\" | Person: #{rental2.person.name} | Date: #{rental2.date}"
+puts ''
+puts 'RENTAL 3'
+puts "Book: \"#{rental3.book.title}\" | Person: #{rental3.person.name} | Date: #{rental3.date}"
 puts ''
 
 # DATA FROM PROJECT 2 - DECORATE A CLASS
