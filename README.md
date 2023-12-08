@@ -50,6 +50,9 @@
 - **It uses class and module concepts.**
 - **Implements OOP Ruby concepts.**
 - **Adds a decorator class and two subclasses: capitalize & trimmer.**
+- **Include book and rental classes.**
+- **Include a simple console UI.**
+- **Debug the app with PRY.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
