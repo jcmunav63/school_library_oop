@@ -13,8 +13,8 @@ def main
   _continue = gets.chomp
   system('cls')
 
-  myApp = App.new
-  myApp.main
+  my_app = App.new
+  my_app.main
   system('cls')
 end
 
